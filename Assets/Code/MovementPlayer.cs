@@ -18,7 +18,7 @@ public class MovementPlayer : MonoBehaviour
 
     void Update()
     {
-        AddVelocityRight();
+        //AddVelocityRight();
 
         if (isPressed)
         {
@@ -48,7 +48,7 @@ public class MovementPlayer : MonoBehaviour
         isPressed = true;
     }
 
-    public void OnPointerUp( )
+    public void OnPointerUp()
     {
         isPressed = false;
     }
