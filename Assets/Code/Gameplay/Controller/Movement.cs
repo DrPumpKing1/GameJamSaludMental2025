@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement  : MonoBehaviour
 {
     private Rigidbody2D body;
     private PhysicsCheck check;

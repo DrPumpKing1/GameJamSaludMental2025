@@ -13,6 +13,8 @@ public class Jump : MonoBehaviour
     [SerializeField] private float fallGravityMultiplier = 3;
     [SerializeField] private float lowGravityMultiplier = 2;
     private bool jumpInput;
+    public bool isPressed = false;
+
 
     private void Awake()
     {
@@ -30,6 +32,8 @@ public class Jump : MonoBehaviour
     private void FixedUpdate()
     {
         if (jumpInput) TryJump();
+
+        if (isPressed) TryJump();
 
         BetterJump();
     }
@@ -58,5 +62,17 @@ public class Jump : MonoBehaviour
             body.AddForce(Vector2.up * (Physics2D.gravity.y * (lowGravityMultiplier - 1) * Time.fixedDeltaTime), ForceMode2D.Impulse);
         }
     }
+
+    public void OnPointerDown()
+    {
+        isPressed = true;
+    }
+
+    public void OnPointerUp()
+    {
+        isPressed = false;
+    }
+
+
 
 }

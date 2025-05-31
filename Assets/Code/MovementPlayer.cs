@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 
-public class Movement : MonoBehaviour
+public class MovementPlayer : MonoBehaviour
 {
     [SerializeField] private float velocityRight = 5f;
     [SerializeField] private float velocityUp = 5f;
