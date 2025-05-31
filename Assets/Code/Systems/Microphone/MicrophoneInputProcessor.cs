@@ -1,5 +1,6 @@
-using Code.Networking.ClientPrediction;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
@@ -10,16 +11,18 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
     [SerializeField] private float sampleRate = 60;
     private float timeBetweenTicks;
     private float tickTimer;
-    [SerializeField] private Range lowState;
-    [SerializeField] private Range highState;
-    private CircularBuffer<int> tickStateBuffer; 
-    public MicrophoneInputStates lastInputState { get; private set; }
-    public bool IsHigh => lastInputState == MicrophoneInputStates.High;
-    public bool IsLow => lastInputState == MicrophoneInputStates.Low;
-    public bool IsSilence => lastInputState == MicrophoneInputStates.Silence;
+    private int tick;
+    [SerializeField] private List<InputRange> inputRanges = new();
+    private CircularBuffer<int> tickStateBuffer;
+    public InputRange lastTickInputState { get; private set; } = NullRange.Get;
 
-    [Header("Runtime")]
-    [SerializeField] private int tick;
+    [Header("Round Processing Settings")]
+    [SerializeField] private int roundWindow = 16;
+    [SerializeField] private int roundTickRate = 1;
+    private int round;
+    
+    public InputRange lastRoundInputState { get; private set; } = NullRange.Get;
+
 
     protected override void Awake()
     {
@@ -39,36 +42,103 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
 
     private void Tick()
     {
-        float loudness = MicrophoneInput.Instance.loudness;
+        lastTickInputState = NullRange.Get;
 
-        if(lowState.InRange(loudness))
+        if(!MicrophoneInput.Instance.isRecording)
         {
-            lastInputState = MicrophoneInputStates.Low;
-        } else if(highState.InRange(loudness))
-        {
-            lastInputState = MicrophoneInputStates.High;
-        } else
-        {
-            lastInputState = MicrophoneInputStates.Silence;
+            return;
         }
 
-        tickStateBuffer.Add((int)lastInputState, tick);
+        float loudness = MicrophoneInput.Instance.loudness;
+
+        for (int i = 0; i < inputRanges.Count; i++)
+        {
+            var range = inputRanges[i];
+            if(range.InRange(loudness))
+            {
+                lastTickInputState = range;
+                break;
+            }
+        }
+
+        tickStateBuffer.Add(lastTickInputState.level, tick);
         tick++;
+        if (tick % roundTickRate == 0) Round();
+    }
+
+    private void Round()
+    {
+        var counter = new Dictionary<int, int>();
+        foreach(var range in inputRanges)
+        {
+            counter.Add(range.level, 0);
+        }
+
+        int frequent = -1;
+        int frequency = 0;
+        for(int i = 0; i < roundWindow; i++)
+        {
+            var replay = tick - i;
+
+            if (replay < 0) break;
+
+            var level = tickStateBuffer.Get(replay);
+            if (level == -1) continue;
+            counter[level]++;
+
+            if (counter[level] > frequency)
+            {
+                frequent = level;
+                frequency = counter[level];
+            }
+        }
+
+        lastRoundInputState = GetInputRangeByLevel(frequent);
+    }
+
+    private InputRange GetInputRangeByLevel(int level)
+    {
+        var found = inputRanges.FirstOrDefault(range => range.level == level);
+        if (found == default) return NullRange.Get;
+        return found;
     }
 }
 
 [Serializable]
-public struct Range
+public struct InputRange
 {
-    [Range(0, 1)] public float lower;
+    public string name;
+    public int level;
+    public float parameter;
+    [Space, Range(0, 1)] public float lower;
     [Range(0, 1)] public float upper;
 
-    public bool InRange(float value) => value >= lower && value <= upper;
+    public InputRange(int level, float parameter, string name, float lower = 0, float upper = 0)
+    {
+        this.level = level;
+        this.parameter = parameter;
+        this.name = name;
+        this.lower = lower;
+        this.upper = upper;
+    }
+
+    public bool InRange(float value) => value >= lower && value < upper;
+
+    public bool Equals(InputRange other)
+    {
+        return level == other.level;
+    }
+
+    public override bool Equals(object obj)
+    {
+        return obj is InputRange other && Equals(other);
+    }
+
+    public static bool operator ==(InputRange lhs, InputRange rhs) => lhs.Equals(rhs);
+    public static bool operator !=(InputRange lhs, InputRange rhs) => !(lhs == rhs);
 }
 
-public enum MicrophoneInputStates
+public static class NullRange
 {
-    Low,
-    High,
-    Silence
+    public static InputRange Get { get; } = new(-1, 0, "Silence");
 }

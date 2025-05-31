@@ -20,7 +20,9 @@ public class PhysicsCheck : MonoBehaviour
 
     void Update()
     {
-        GroundCheck();
+        //GroundCheck();
+        ImmersionGroundCheck();
+        if (isGrounded) lastTimeOnGround = Time.time;
     }
 
     private void GroundCheck()
@@ -34,6 +36,12 @@ public class PhysicsCheck : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(position, footSize, 0f, Vector2.down, distance, ground);
 
         isGrounded = hit.collider != null;
-        if (isGrounded) lastTimeOnGround = Time.time;
+    }
+
+    private void ImmersionGroundCheck()
+    {
+        var position = transform.position + Vector3.up * capsule.size.y / 2;
+
+        isGrounded = Physics2D.OverlapPoint(position, ground) != null;
     }
 }

@@ -13,6 +13,6 @@ public class InputStateText : MonoBehaviour
             return;
         }
 
-        text.text = MicrophoneInputProcessor.Instance.lastInputState.ToString();
+        text.text = MicrophoneInputProcessor.Instance.lastRoundInputState.name;
     }
 }
