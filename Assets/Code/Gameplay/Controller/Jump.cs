@@ -6,12 +6,19 @@ public class Jump : MonoBehaviour
     private PhysicsCheck check;
 
     [Header("Settings")]
-    [SerializeField] private float impulse = 12f;
+    [SerializeField] private float impulseBase = 12f;
     [SerializeField] private float cooldown = .45f;
+    [SerializeField] private float departureTime = .2f;
+    private float departureTimer;
+    public bool onDeparture { get; private set; }
+    public bool OnJump { get; private set; }
     private float timer;
     [SerializeField] private float coyoteTime = .25f;
     [SerializeField] private float fallGravityMultiplier = 3;
     [SerializeField] private float lowGravityMultiplier = 2;
+    [SerializeField] private float baseGravityScale;
+    [SerializeField] private float buoyancyGravityScale;
+    [SerializeField] private float maxSpeed;
     private bool jumpInput;
     public bool isPressed = false;
 
@@ -24,18 +31,23 @@ public class Jump : MonoBehaviour
 
     private void Update()
     {
-        jumpInput = MicrophoneInputProcessor.Instance.IsHigh;
+        if (timer > 0 && !OnJump) timer -= Time.deltaTime;
+        if (departureTimer > 0 && !check.IsGrounded) departureTimer -= Time.deltaTime;
+        if (departureTimer <= 0 && onDeparture) onDeparture = false;
 
-        if (timer > 0) timer -= Time.deltaTime;
+        if (check.IsGrounded && !onDeparture && OnJump) OnJump = false; //Landing 
+
+        HandleInput();
+
+        body.gravityScale = OnJump && !jumpInput ? baseGravityScale : buoyancyGravityScale;
     }
 
     private void FixedUpdate()
     {
-        if (jumpInput) TryJump();
-
         if (isPressed) TryJump();
 
         BetterJump();
+        LimitSpeed();
     }
 
     private void TryJump()
@@ -45,23 +57,57 @@ public class Jump : MonoBehaviour
         float timeSinceGrounded = Time.time - check.LastTimeOnGround;
         if (timeSinceGrounded > coyoteTime) return;
 
+        float impulse = impulseBase * MicrophoneInputProcessor.Instance.lastRoundInputState.parameter;
+
+        //body.linearVelocity = new(body.linearVelocity.x, 0);
         body.AddForce(Vector2.up * impulse, ForceMode2D.Impulse);
         timer = cooldown;
+        OnJump = true;
+        onDeparture = true;
+        departureTimer = departureTime;
     }
 
     private void BetterJump()
     {
-        if (check.IsGrounded) return;
+        if (OnJump) return;
+
+        float multiplier = 0;
 
         if(body.linearVelocity.y < 0)
         {
-            body.AddForce(Vector2.up * (Physics2D.gravity.y * (fallGravityMultiplier - 1) * Time.fixedDeltaTime), ForceMode2D.Impulse);
+            multiplier = fallGravityMultiplier;
         }
-        else if(body.linearVelocity.y > 0 && !jumpInput)
+        else if(!jumpInput)
         {
-            body.AddForce(Vector2.up * (Physics2D.gravity.y * (lowGravityMultiplier - 1) * Time.fixedDeltaTime), ForceMode2D.Impulse);
+            multiplier = lowGravityMultiplier;
+        }
+
+        if (multiplier == 0) return;
+
+        body.AddForce(Vector2.up * (Physics2D.gravity.y * (multiplier - 1) * Time.fixedDeltaTime), ForceMode2D.Impulse);
+    }
+
+    private void LimitSpeed()
+    {
+        if (Mathf.Abs(body.linearVelocity.y) > maxSpeed)
+        {
+            body.linearVelocity = new(body.linearVelocity.x, Mathf.Sign(body.linearVelocity.y) * maxSpeed);
         }
     }
+
+
+    private void HandleInput()
+    {
+        bool previousInput = jumpInput;
+        jumpInput = InputActivation(MicrophoneInputProcessor.Instance.lastRoundInputState);
+
+        bool jumpPressed = previousInput == false && jumpInput == true;
+        bool jumpReleased = previousInput == true && jumpInput == false;
+
+        if (jumpPressed) TryJump();
+    }
+
+    static bool InputActivation(InputRange lastInput) => lastInput.level >= 1;
 
     public void OnPointerDown()
     {
@@ -72,7 +118,4 @@ public class Jump : MonoBehaviour
     {
         isPressed = false;
     }
-
-
-
 }

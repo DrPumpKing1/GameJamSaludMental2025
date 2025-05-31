@@ -4,6 +4,7 @@ public class Friction : MonoBehaviour
 {
     private Rigidbody2D body;
     private PhysicsCheck check;
+    private Jump jump;
 
     [Header("Settings")]
     [SerializeField] private float groundFriction = 5f;
@@ -15,6 +16,7 @@ public class Friction : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         check = GetComponent<PhysicsCheck>();
+        jump = GetComponent<Jump>();
     }
 
     private void FixedUpdate()
@@ -24,7 +26,7 @@ public class Friction : MonoBehaviour
 
     private void ManageFriction()
     {
-        if (!check.IsGrounded)
+        if (!check.IsGrounded || jump.OnJump)
             ApplyFriction(airFriction);
         else if (IsTurning || InputReader.Instance.Move == 0)
             ApplyFriction(groundFriction);

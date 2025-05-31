@@ -16,6 +16,9 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
     [SerializeField] private int sampleWindow = 64;
     [SerializeField] private int minSamples = 32;
 
+    [Header("Post Recording Settingas")]
+    [SerializeField, Range(1, 2)] private float sensibility = 1;
+
     protected override void Awake()
     {
         LoadMicrophones();
@@ -131,6 +134,7 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
         }
 
         loudness = GetLoudness(Microphone.GetPosition(device.name), clip);
+        loudness = Mathf.Clamp(loudness * sensibility, 0, 1);
     }
  
     private float GetLoudness(int position, AudioClip clip)
