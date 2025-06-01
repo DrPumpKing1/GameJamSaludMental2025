@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 955298ef0380e37429c0fc8b894852aa
+guid: ef5c66b2b96084f449e5ba52c2de4a19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4737262560269186713
-    second: AgainButtom_0
+      213: -6061124211824957039
+    second: PauseButtom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AgainButtom_0
+      name: PauseButtom_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 769c56fecccd14eb0800000000000000
-      internalID: -4737262560269186713
+      spriteID: 19967ae74af82eba0800000000000000
+      internalID: -6061124211824957039
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AgainButtom_0: -4737262560269186713
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
