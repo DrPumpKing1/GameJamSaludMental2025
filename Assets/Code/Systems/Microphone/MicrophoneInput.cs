@@ -17,8 +17,8 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
     [SerializeField] private int minSamples = 32;
 
     [Header("Post Recording Settingas")]
-    [SerializeField, Range(1, 2)] private float sensibility = 1;
-
+    [SerializeField] private float sensibility = 1;
+    public float Sensibility { get => sensibility; set => sensibility = value; }
     protected override void Awake()
     {
         LoadMicrophones();
@@ -190,6 +190,11 @@ public struct MicrophoneDevice
     public override bool Equals(object obj)
     {
         return obj is MicrophoneDevice other && Equals(other);
+    }
+
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
     }
 
     public static bool operator ==(MicrophoneDevice lhs, MicrophoneDevice rhs) => lhs.Equals(rhs);

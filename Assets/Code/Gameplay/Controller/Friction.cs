@@ -26,7 +26,7 @@ public class Friction : MonoBehaviour
 
     private void ManageFriction()
     {
-        if (!check.IsGrounded || jump.OnJump)
+        if (!check.IsGrounded)
             ApplyFriction(airFriction);
         else if (IsTurning || InputReader.Instance.Move == 0)
             ApplyFriction(groundFriction);
