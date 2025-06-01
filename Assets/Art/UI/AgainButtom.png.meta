@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0ac6a8d252521b949954662962c2334a
+guid: 955298ef0380e37429c0fc8b894852aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7038564472407502054
-    second: SoundButtom_0
+      213: -4737262560269186713
+    second: AgainButtom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,24 +122,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SoundButtom_0
+      name: AgainButtom_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a13577d77eef15e90800000000000000
-      internalID: -7038564472407502054
+      spriteID: 769c56fecccd14eb0800000000000000
+      internalID: -4737262560269186713
       vertices: []
       indices: 
       edges: []
@@ -173,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SoundButtom_0: -7038564472407502054
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
