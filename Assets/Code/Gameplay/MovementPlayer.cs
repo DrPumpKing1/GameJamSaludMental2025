@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -7,7 +7,7 @@ public class MovementPlayer : MonoBehaviour
 {
     [SerializeField] private float velocityRight = 5f;
     [SerializeField] private float velocityUp = 5f;
-    [SerializeField] private Button upButton;
+
     private bool isPressed = false;
 
     private Rigidbody2D rb;
