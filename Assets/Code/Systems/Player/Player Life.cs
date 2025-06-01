@@ -29,6 +29,7 @@ public class PlayerLife : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        CameraShake.Instance.Shake();
         UpdateHealthBar();
 
         if (currentHealth <= 0)

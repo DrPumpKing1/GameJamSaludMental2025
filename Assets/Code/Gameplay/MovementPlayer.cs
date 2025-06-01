@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class MovementPlayer : MonoBehaviour
 {
-    [SerializeField] private float velocityRight = 5f;
+    //[SerializeField] private float velocityRight = 5f;
     [SerializeField] private float velocityUp = 5f;
 
     private bool isPressed = false;
@@ -20,19 +20,19 @@ public class MovementPlayer : MonoBehaviour
     {
         //AddVelocityRight();
 
-        if (isPressed)
+        if (isPressed || Input.GetKey("space"))
         {
             AddForceUp();
         }
     }
 
-    void AddVelocityRight()
-    {
-        if (rb != null)
-        {
-            rb.linearVelocity = new Vector2(velocityRight, rb.linearVelocity.y);
-        }
-    }
+    //void AddVelocityRight()
+    //{
+    //    if (rb != null)
+    //    {
+    //        rb.linearVelocity = new Vector2(velocityRight, rb.linearVelocity.y);
+    //    }
+    //}
     void AddForceUp()
     {
         Debug.Log("a�aaa");
