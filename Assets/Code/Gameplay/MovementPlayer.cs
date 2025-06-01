@@ -35,7 +35,7 @@ public class MovementPlayer : MonoBehaviour
     //}
     void AddForceUp()
     {
-        Debug.Log("a�aaa");
+
         if (rb != null)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
