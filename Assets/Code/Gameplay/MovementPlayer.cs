@@ -19,8 +19,9 @@ public class MovementPlayer : MonoBehaviour
     void Update()
     {
         //AddVelocityRight();
+        bool isPressed = Input.touchCount > 0 || Input.GetKey("space");
 
-        if (isPressed || Input.GetKey("space"))
+        if (isPressed)
         {
             AddForceUp();
         }
