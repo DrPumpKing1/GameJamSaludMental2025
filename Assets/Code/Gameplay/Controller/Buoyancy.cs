@@ -6,12 +6,10 @@ public class Buoyancy : MonoBehaviour
     private CapsuleCollider2D capsule;
     private Jump jump;
     [SerializeField] private Transform baseLine;
+    [SerializeField] private float distanceToDecelerate;
+    public bool underBuoyancy { get; private set; }
+    private float acceleration;
 
-    [Header("Settings")]
-    [SerializeField] private float threshold = 1f;
-    [SerializeField] private float maxForce = 15f;
-    [SerializeField] private float unitForce = 4f;
-    [SerializeField] private float attenuation = .5f;
 
     private void Awake()
     {
@@ -22,7 +20,7 @@ public class Buoyancy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ApplyBuoyancy();
+        KinematicBuoyancy();
     }
 
     private Vector3 CenterPosition()
@@ -30,25 +28,28 @@ public class Buoyancy : MonoBehaviour
         return transform.position + Vector3.up * capsule.size.y / 2;
     }
 
-    private void ApplyBuoyancy()
+    private void KinematicBuoyancy()
     {
-        float yDiff = baseLine.position.y - CenterPosition().y;
-        if (yDiff <= 0)
+        float distance = baseLine.position.y - CenterPosition().y;
+        if (distance <= 0)
         {
-            if(!jump.OnJump)
-            {
-                var velocityY = body.linearVelocity.y;
-                velocityY = Mathf.Lerp(velocityY, 0, attenuation * Time.fixedDeltaTime);
-                body.linearVelocity = new(body.linearVelocity.x, velocityY);
-            }
+            underBuoyancy = false;
             return;
         }
 
-        float force = Mathf.Abs(yDiff * unitForce);
-        if (force < threshold) return;
-        force = Mathf.Min(force, maxForce);
-        var direction = Vector2.up;
+        if(underBuoyancy == false)
+        {
+            acceleration = Mathf.Pow(body.linearVelocity.y, 2) / (2 * distanceToDecelerate);
+        }
+        underBuoyancy = true;
 
-        body.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+        if(body.linearVelocity.y >= 0)
+        {
+            return;
+        }
+        float gravity = Physics.gravity.y * jump.gravity;
+        float forceToApply = (acceleration - gravity) * Time.fixedDeltaTime;
+
+        body.AddForce(Vector3.up * forceToApply, ForceMode2D.Impulse);
     }
 }

@@ -13,8 +13,9 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
     private float tickTimer;
     private int tick;
     [SerializeField] private List<InputRange> inputRanges = new();
-    private CircularBuffer<int> tickStateBuffer;
+    private CircularBuffer<InputStateData> tickStateBuffer;
     public InputRange lastTickInputState { get; private set; } = NullRange.Get;
+    public float lastTickloudness { get; private set; }
 
     [Header("Round Processing Settings")]
     [SerializeField] private int roundWindow = 16;
@@ -22,11 +23,12 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
     private int round;
     
     public InputRange lastRoundInputState { get; private set; } = NullRange.Get;
+    public float lastRoundloudness { get; private set; }
 
 
     protected override void Awake()
     {
-        tickStateBuffer = new CircularBuffer<int>(bufferSize);
+        tickStateBuffer = new (bufferSize);
         timeBetweenTicks = 1 / sampleRate;
     }
 
@@ -50,6 +52,7 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
         }
 
         float loudness = MicrophoneInput.Instance.loudness;
+        lastTickloudness = loudness;
 
         for (int i = 0; i < inputRanges.Count; i++)
         {
@@ -61,7 +64,7 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
             }
         }
 
-        tickStateBuffer.Add(lastTickInputState.level, tick);
+        tickStateBuffer.Add(new(lastTickInputState.level, loudness), tick);
         tick++;
         if (tick % roundTickRate == 0) Round();
     }
@@ -82,7 +85,7 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
 
             if (replay < 0) break;
 
-            var level = tickStateBuffer.Get(replay);
+            var level = tickStateBuffer.Get(replay).level;
             if (level == -1) continue;
             counter[level]++;
 
@@ -94,6 +97,7 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
         }
 
         lastRoundInputState = GetInputRangeByLevel(frequent);
+        lastRoundloudness = lastTickloudness;
     }
 
     private InputRange GetInputRangeByLevel(int level)
@@ -134,6 +138,11 @@ public struct InputRange
         return obj is InputRange other && Equals(other);
     }
 
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
+
     public static bool operator ==(InputRange lhs, InputRange rhs) => lhs.Equals(rhs);
     public static bool operator !=(InputRange lhs, InputRange rhs) => !(lhs == rhs);
 }
@@ -141,4 +150,16 @@ public struct InputRange
 public static class NullRange
 {
     public static InputRange Get { get; } = new(-1, 0, "Silence");
+}
+
+public struct InputStateData
+{
+    public int level;
+    public float loudness;
+
+    public InputStateData(int level, float loudness)
+    {
+        this.level = level;
+        this.loudness = loudness;
+    }
 }
