@@ -24,7 +24,12 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")){
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("PointsBlock")){
+
+            if (collision.gameObject.CompareTag("PointsBlock"))
+            {
+                PointsManager.Instance?.AddPoint(1);
+            }
             Destroy(gameObject);
         }
     }
