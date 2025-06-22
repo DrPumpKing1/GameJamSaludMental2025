@@ -11,6 +11,7 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private string sceneName;
 
     [SerializeField] private Image healthBarFill;
+    [SerializeField] private DamageHitEffect _hitEffect;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class PlayerLife : MonoBehaviour
     {
         currentHealth -= damage;
         CameraShake.Instance.Shake();
+        _hitEffect.CallFlash();
         UpdateHealthBar();
 
         if (currentHealth <= 0)

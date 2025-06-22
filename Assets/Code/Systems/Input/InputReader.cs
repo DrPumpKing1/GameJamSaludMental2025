@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class InputReader : Singleton<InputReader>
@@ -10,5 +11,10 @@ public class InputReader : Singleton<InputReader>
         base.Awake();
         input = new ();
         input.Enable();
+    }
+
+    private void OnDisable()
+    {
+        input.Disable();
     }
 }
