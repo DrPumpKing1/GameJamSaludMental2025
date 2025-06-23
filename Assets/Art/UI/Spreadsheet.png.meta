@@ -138,7 +138,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -197,7 +197,7 @@ TextureImporter:
         width: 490
         height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,7 +219,7 @@ TextureImporter:
         width: 508
         height: 506
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,7 +241,7 @@ TextureImporter:
         width: 373
         height: 340
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
         width: 312
         height: 301
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -285,7 +285,7 @@ TextureImporter:
         width: 341
         height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -307,7 +307,7 @@ TextureImporter:
         width: 373
         height: 339
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -329,7 +329,7 @@ TextureImporter:
         width: 274
         height: 303
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,11 +347,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 707
-        y: 1394
-        width: 237
-        height: 199
+        y: 1218
+        width: 334
+        height: 375
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -373,7 +373,7 @@ TextureImporter:
         width: 382
         height: 154
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,28 +387,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spreadsheet_9
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 1218
-        width: 238
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5be62682d0fb6f350800000000000000
-      internalID: 6050233212651859637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Spreadsheet_10
       rect:
         serializedVersion: 2
@@ -417,7 +395,7 @@ TextureImporter:
         width: 201
         height: 1366
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -439,7 +417,7 @@ TextureImporter:
         width: 307
         height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -461,7 +439,7 @@ TextureImporter:
         width: 309
         height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -479,11 +457,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 403
-        width: 186
-        height: 261
+        y: 387
+        width: 363
+        height: 291
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,72 +475,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spreadsheet_14
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 466
-        width: 47
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e09658cf830b5ea00800000000000000
-      internalID: 785227468847278350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spreadsheet_15
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 429
-        width: 60
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f5407718d7fce480800000000000000
-      internalID: -8868441058721118727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spreadsheet_16
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 391
-        width: 72
-        height: 284
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6a3f580f72c1baf0800000000000000
-      internalID: -382310642492687762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Spreadsheet_17
       rect:
         serializedVersion: 2
@@ -571,7 +483,7 @@ TextureImporter:
         width: 318
         height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -588,12 +500,12 @@ TextureImporter:
       name: Spreadsheet_18
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 13
-        width: 187
+        width: 363
         height: 260
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,37 +519,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spreadsheet_19
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 73
-        width: 143
-        height: 143
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83b67da33c22aebd0800000000000000
-      internalID: -2600227612951876808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Spreadsheet_20
       rect:
         serializedVersion: 2
         x: 741
         y: 0
-        width: 107
+        width: 268
         height: 287
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -650,33 +540,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Spreadsheet_21
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 0
-        width: 107
-        height: 287
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b04622d9211a3a7b0800000000000000
-      internalID: -5214146842247142389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5541bb52199b2044eb6ed2121b92e1d7
     internalID: 0
     vertices: []
     indices: 
@@ -685,7 +553,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spreadsheet_0: 1591628606770118520
+      Spreadsheet_1: 7829199451471317889
+      Spreadsheet_10: 6678500449926835311
+      Spreadsheet_11: 364822324983185094
+      Spreadsheet_12: -6621230281634533536
+      Spreadsheet_13: -5850905396312759963
+      Spreadsheet_14: 785227468847278350
+      Spreadsheet_15: -8868441058721118727
+      Spreadsheet_16: -382310642492687762
+      Spreadsheet_17: -4484559472740302591
+      Spreadsheet_18: -14716043540591221
+      Spreadsheet_19: -2600227612951876808
+      Spreadsheet_2: 8725808484490666787
+      Spreadsheet_20: 100244501929068750
+      Spreadsheet_21: -5214146842247142389
+      Spreadsheet_22: 306809999
+      Spreadsheet_3: 1141380926968921659
+      Spreadsheet_4: -6114480644514549295
+      Spreadsheet_5: -1845386027022200699
+      Spreadsheet_6: 7922896119829157830
+      Spreadsheet_7: -5673480622833936090
+      Spreadsheet_8: 666619539192255690
+      Spreadsheet_9: 6050233212651859637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
