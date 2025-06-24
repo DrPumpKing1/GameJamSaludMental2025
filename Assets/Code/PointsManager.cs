@@ -36,7 +36,7 @@ public class PointsManager : MonoBehaviour
     {
         if (pointsText != null)
         {
-            pointsText.text = "Points: " + points.ToString();
+            pointsText.text = points.ToString();
         }
     }
 }
