@@ -8,6 +8,7 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private float maxHealth = 3f;
     [SerializeField] private float receiveDamage = 1f;
     private float currentHealth;
+    [SerializeField] private AudioClip damageSound;
     [SerializeField] private string sceneName;
 
     [SerializeField] private Image healthBarFill;
@@ -33,6 +34,11 @@ public class PlayerLife : MonoBehaviour
         CameraShake.Instance.Shake();
         _hitEffect.CallFlash();
         UpdateHealthBar();
+
+        if (damageSound != null)
+        {
+            AudioManagerSingleton.audioManager.PlayOneShot(damageSound);
+        }
 
         if (currentHealth <= 0)
         {
