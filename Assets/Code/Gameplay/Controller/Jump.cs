@@ -41,7 +41,8 @@ public class Jump : MonoBehaviour
     {
         if (timer > 0) return;
 
-        float impulse = impulseBase * MicrophoneInputProcessor.Instance.lastRoundInputState.parameter;
+        InputRange inputRange = MicrophoneInputProcessor.Instance.lastRoundInputState;
+        float impulse = impulseBase * inputRange.parameter;
 
         if(body.linearVelocity.y < 0)
         {

@@ -51,13 +51,14 @@ public class MicrophoneInputProcessor : Singleton<MicrophoneInputProcessor>
             return;
         }
 
+        float loudnessPreAmp = MicrophoneInput.Instance.loudnessPreAmp;
         float loudness = MicrophoneInput.Instance.loudness;
         lastTickloudness = loudness;
 
         for (int i = 0; i < inputRanges.Count; i++)
         {
             var range = inputRanges[i];
-            if(range.InRange(loudness))
+            if(range.InRange(loudnessPreAmp))
             {
                 lastTickInputState = range;
                 break;

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class SensibilitySlider : MonoBehaviour
 {
+    private const string SensKey = "MicSensibility";
     [SerializeField] private Slider slider;
 
     [Header("Settings")]
@@ -11,7 +12,8 @@ public class SensibilitySlider : MonoBehaviour
 
     private void Start()
     {
-        slider.value = SensToValue(MicrophoneInput.Instance.Sensibility);
+        float saveSens = PlayerPrefs.GetFloat(SensKey, MicrophoneInput.Instance.Sensibility);
+        slider.value = SensToValue(saveSens);
     }
 
     private void OnEnable()
@@ -26,7 +28,9 @@ public class SensibilitySlider : MonoBehaviour
 
     public void OnSliderChanged(float value)
     {
-        MicrophoneInput.Instance.Sensibility = ValueToSens(value);
+        float saveSens = ValueToSens(value);
+        PlayerPrefs.SetFloat(SensKey, saveSens);
+        MicrophoneInput.Instance.Sensibility = saveSens;
     }
 
     float SensToValue(float sensibility) => (sensibility - min) / (max - min);

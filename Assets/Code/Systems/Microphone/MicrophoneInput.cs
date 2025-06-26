@@ -5,10 +5,12 @@ using System.Linq;
 
 public class MicrophoneInput : Singleton<MicrophoneInput>
 {
+    private const string DeviceKey = "Device";
     public List<MicrophoneDevice> devices { get; } = new();
     public MicrophoneDevice device { get; private set; }
     private AudioClip clip;
     public float loudness { get; private set; }
+    public float loudnessPreAmp { get; private set; }
     public bool isRecording { get; private set; }
     public event Action OnDeviceListChanged;
 
@@ -56,6 +58,13 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
             return;
         }
 
+        var savedDevice = new MicrophoneDevice(PlayerPrefs.GetString(DeviceKey, devices[0].name));
+        if (devices.Contains(savedDevice))
+        {
+            device = savedDevice;
+            return;
+        }
+        
         device = devices[0];
     }
 
@@ -133,8 +142,8 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
             return;
         }
 
-        loudness = GetLoudness(Microphone.GetPosition(device.name), clip);
-        loudness = Mathf.Clamp(loudness * sensibility, 0, 1);
+        loudnessPreAmp = GetLoudness(Microphone.GetPosition(device.name), clip);
+        loudness = Mathf.Clamp(loudnessPreAmp * sensibility, 0, 1);
     }
  
     private float GetLoudness(int position, AudioClip clip)
@@ -167,6 +176,7 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
         if(deviceIndex >= 0 && deviceIndex < devices.Count)
         {
             device = devices[deviceIndex];
+            PlayerPrefs.SetString(DeviceKey, device.name);
             RestartRecording();
         }
     }

@@ -49,7 +49,7 @@ MonoBehaviour:
   - name: Low
     level: 0
     parameter: 1
-    lower: 0.1
+    lower: 0.2
     upper: 0.25
   - name: Medium
     level: 1
