@@ -446,7 +446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &872022567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4715617154515232592, guid: 87dd62df139b36b4d85954ae8b151863, type: 3}
+  m_Sprite: {fileID: -5733380982640720275, guid: 6f208c51bde3d724ea0b307c90f27341, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -750,8 +750,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292731128
-  m_fontColor: {r: 0.972549, g: 0.8784314, b: 0.8666667, a: 1}
+    rgba: 4293915135
+  m_fontColor: {r: 1, g: 0.9450981, b: 0.93725497, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
