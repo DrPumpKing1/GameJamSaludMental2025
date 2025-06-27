@@ -706,6 +706,7 @@ GameObject:
   - component: {fileID: 1284306201}
   - component: {fileID: 1284306200}
   - component: {fileID: 1284306203}
+  - component: {fileID: 1284306204}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -831,6 +832,40 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1284306204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284306199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1147eb331f4b5749b2ad6527152d2f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverText: {fileID: 1454476607}
+  gameOverPhrases:
+  - "Tranquilidad, t\xFA puedes :)"
+  - "\xA1Vuelve a intentarlo!"
+  - Respira y sigue jugando
+  - "\xA1No te rindas ahora!"
+  - Vas por buen camino
+  - "T\xFA puedes con esto"
+  - "Vamos, un intento m\xE1s"
+  - "Sigue as\xED, crack ;)"
+  - "Est\xE1s mejorando mucho"
+  - "\xA1Lo est\xE1s haciendo bien!"
+  - "Vas aprendiendo r\xE1pido"
+  - "Solo fue una ca\xEDda"
+  - "T\xF3mate tu tiempo"
+  - "Todo bien, sigue t\xFA"
+  - Aprender es parte del juego
+  - "Cada error ense\xF1a algo"
+  - Fallar es avanzar ;)
+  - Respira, no corres solo
+  - La siguiente es mejor
+  - Vas bien, no pares
 --- !u!1 &1454476605
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Con calma, t\xFA puedes :)"
+  m_text: .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a24cc91cb72575a48bfc1038fb3daa43, type: 2}
   m_sharedMaterial: {fileID: -6608395698435085884, guid: a24cc91cb72575a48bfc1038fb3daa43, type: 2}
@@ -984,7 +1019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1869333163
 RectTransform:
   m_ObjectHideFlags: 0
