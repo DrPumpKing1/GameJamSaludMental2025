@@ -64,7 +64,7 @@ public class SceneChangerNoInitialFadeOut : MonoBehaviour
         // Asegura que la opacidad final sea 1 (completamente opaco) antes de cargar la escena
         currentColor.a = 1;
         fadeImage.color = currentColor;
-
+        Time.timeScale = 1f;
         SceneManager.LoadScene(escenaNombre);
     }
 
