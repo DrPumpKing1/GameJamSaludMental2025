@@ -2803,6 +2803,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Device Selector
       objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Text
+      value: Option D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Text
+      value: Option E
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754934315223873206, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7500727820318113530, guid: af1faeec8bdc4f149a7775858b7eee31, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2950,11 +2994,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 5.0660086, y: 3.9723792}
+  m_Offset: {x: 5.0660086, y: -0.38368177}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2964,7 +3008,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 27.67901, y: 4.0760336}
+  m_Size: {x: 27.67901, y: 12.788156}
   m_EdgeRadius: 0
 --- !u!253 &1005192020
 BuoyancyEffector2D:
@@ -3001,7 +3045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -9}
+  m_AnchoredPosition: {x: -5, y: -11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1034483244 stripped
@@ -3348,7 +3392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8006022634970555118, guid: 2401262df18743f488af426a368e41f3, type: 3}
       propertyPath: sensibility
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3407,7 +3451,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.28985462}
+  m_Offset: {x: 0, y: 2.2120132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3417,7 +3461,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.42029077}
+  m_Size: {x: 1, y: 5.4240265}
   m_EdgeRadius: 0
 --- !u!212 &1301765691
 SpriteRenderer:
@@ -3947,7 +3991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 1558942405}
   min: 1
-  max: 10
+  max: 150
 --- !u!1 &1559811084
 GameObject:
   m_ObjectHideFlags: 0
