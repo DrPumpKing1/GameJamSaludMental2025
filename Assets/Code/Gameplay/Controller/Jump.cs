@@ -17,6 +17,11 @@ public class Jump : MonoBehaviour
     public float gravity { get; private set; }
     public bool isPressed = false;
 
+    // --- Nuevas variables para el filtro de paso bajo ---
+    [Header("Audio Smoothing")]
+    [SerializeField] private float lowPassFilterStrength = 0.1f; // Ajusta este valor (0.0 a 1.0), menor valor = más suavizado
+    private float smoothedLoudness = 0f; // Almacena el valor de sonoridad suavizado
+    [SerializeField] private float positionLerpSpeed = 5f; // Velocidad de interpolación para la posición
 
     private void Awake()
     {
@@ -50,10 +55,27 @@ public class Jump : MonoBehaviour
         //}
 
         //body.AddForce(Vector2.up * MicrophoneInput.Instance.loudness, ForceMode2D.Impulse);
-        print(MicrophoneInput.Instance.loudness);
-        Vector2 target = new Vector2(body.position.x, MicrophoneInput.Instance.loudness - 4.5f);
+
+        // --- Aplicar el filtro de paso bajo a la sonoridad ---
+        // Inicializa smoothedLoudness la primera vez o si es cero
+        if (smoothedLoudness == 0f)
+        {
+            smoothedLoudness = MicrophoneInput.Instance.loudness;
+        }
+        // Aplica el filtro de paso bajo para suavizar los cambios
+        smoothedLoudness = Mathf.Lerp(smoothedLoudness, MicrophoneInput.Instance.loudness, lowPassFilterStrength);
+
+        print(MicrophoneInput.Instance.loudness); // Sonoridad original
+        print("Smoothed Loudness: " + smoothedLoudness); // Sonoridad suavizada
+
+        // Calcula la posición objetivo usando la sonoridad suavizada
+        Vector2 target = new Vector2(body.position.x, smoothedLoudness - 4.5f);
         print(target);
-        body.position = Vector2.Lerp(body.position, target, Time.deltaTime);
+
+        // Interpola la posición del cuerpo hacia el objetivo de forma suavizada
+        // El uso de Time.deltaTime * positionLerpSpeed asegura que la velocidad de interpolación
+        // sea independiente del framerate.
+        body.position = Vector2.Lerp(body.position, target, Time.deltaTime * positionLerpSpeed);
         //timer = cooldown;
     }
 
@@ -84,7 +106,6 @@ public class Jump : MonoBehaviour
     //    }
     //}
 
-
     private void HandleInput()
     {
         //bool previousInput = jumpInput;
@@ -93,7 +114,8 @@ public class Jump : MonoBehaviour
         //bool jumpPressed = previousInput == false && jumpInput == true;
         //bool jumpReleased = previousInput == true && jumpInput == false;
 
-        /*if (jumpInput)*/ TryJump();
+        /*if (jumpInput)*/
+        TryJump();
     }
 
     static bool InputActivation(InputRange lastInput) => lastInput.level >= 1;
