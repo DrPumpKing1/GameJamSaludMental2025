@@ -3300,6 +3300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Microphone
       objectReference: {fileID: 0}
+    - target: {fileID: 8006022634970555118, guid: 2401262df18743f488af426a368e41f3, type: 3}
+      propertyPath: sensibility
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3727,6 +3731,14 @@ PrefabInstance:
       propertyPath: baseLine
       value: 
       objectReference: {fileID: 1034483244}
+    - target: {fileID: 273624583812500783, guid: 20f9b3dffc5d34a43af76a123ae87c86, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700644026270553618, guid: 20f9b3dffc5d34a43af76a123ae87c86, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5898607382430822042, guid: 20f9b3dffc5d34a43af76a123ae87c86, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5512996
@@ -3771,6 +3783,10 @@ PrefabInstance:
       propertyPath: healthBarFill
       value: 
       objectReference: {fileID: 2032300703}
+    - target: {fileID: 6791834913843100018, guid: 20f9b3dffc5d34a43af76a123ae87c86, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9123203198619945988, guid: 20f9b3dffc5d34a43af76a123ae87c86, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4466,7 +4482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1532764355}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0768ab2e0fe6ba409373a8b964c7d7d, type: 3}
   m_Name: 

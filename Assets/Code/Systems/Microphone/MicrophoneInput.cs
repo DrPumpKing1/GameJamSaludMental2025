@@ -143,7 +143,9 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
         }
 
         loudnessPreAmp = GetLoudness(Microphone.GetPosition(device.name), clip);
-        loudness = Mathf.Clamp(loudnessPreAmp * sensibility, 0, 1);
+        loudness = Mathf.Clamp(loudnessPreAmp * sensibility, 0, 100);
+        //Debug.Log(AudioSettings.outputSampleRate);
+        //Debug.Log(loudness);
     }
  
     private float GetLoudness(int position, AudioClip clip)
@@ -165,10 +167,10 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
         float loudness = 0;
         for(int i = 0; i < totalSamples; i++)
         {
-            loudness += Mathf.Abs(waveData[i]);
+            loudness += waveData[i] * waveData[i];
         }
 
-        return loudness / totalSamples;
+        return Mathf.Sqrt(loudness / totalSamples);
     }
 
     public void ChangeDevice(int deviceIndex)

@@ -26,70 +26,74 @@ public class Jump : MonoBehaviour
 
     private void Update()
     {
-        if (timer > 0) timer -= Time.deltaTime;
+        //if (timer > 0) timer -= Time.deltaTime;
 
         HandleInput();
     }
 
     private void FixedUpdate()
     {
-        BetterJump();
-        LimitSpeed();
+        //BetterJump();
+        //LimitSpeed();
     }
 
     private void TryJump()
     {
-        if (timer > 0) return;
+        //if (timer > 0) return;
 
-        InputRange inputRange = MicrophoneInputProcessor.Instance.lastRoundInputState;
-        float impulse = impulseBase * inputRange.parameter;
+        //InputRange inputRange = MicrophoneInputProcessor.Instance.lastRoundInputState;
+        //float impulse = impulseBase * inputRange.parameter;
 
-        if(body.linearVelocity.y < 0)
-        {
-            impulse -= body.linearVelocity.y;
-        }
+        //if(body.linearVelocity.y < 0)
+        //{
+        //    impulse -= body.linearVelocity.y;
+        //}
 
-        body.AddForce(Vector2.up * impulse, ForceMode2D.Impulse);
-        timer = cooldown;
+        //body.AddForce(Vector2.up * MicrophoneInput.Instance.loudness, ForceMode2D.Impulse);
+        print(MicrophoneInput.Instance.loudness);
+        Vector2 target = new Vector2(body.position.x, MicrophoneInput.Instance.loudness - 4.5f);
+        print(target);
+        body.position = Vector2.Lerp(body.position, target, Time.deltaTime);
+        //timer = cooldown;
     }
 
-    private void BetterJump()
-    {
-        if (check.IsGrounded) return;
+    //private void BetterJump()
+    //{
+    //    if (check.IsGrounded) return;
 
-        gravity = 0;
-        if(body.linearVelocity.y < 0)
-        {
-            gravity = fallGravityMultiplier;
-        }
-        else if(!jumpInput)
-        {
-            gravity = lowGravityMultiplier;
-        }
+    //    gravity = 0;
+    //    if(body.linearVelocity.y < 0)
+    //    {
+    //        gravity = fallGravityMultiplier;
+    //    }
+    //    else if(!jumpInput)
+    //    {
+    //        gravity = lowGravityMultiplier;
+    //    }
 
-        if (gravity == 0) return;
+    //    if (gravity == 0) return;
 
-        body.AddForce(Vector2.up * (Physics2D.gravity.y * gravity * Time.fixedDeltaTime), ForceMode2D.Impulse);
-    }
+    //    body.AddForce(Vector2.up * (Physics2D.gravity.y * gravity * Time.fixedDeltaTime), ForceMode2D.Impulse);
+    //}
 
-    private void LimitSpeed()
-    {
-        if (Mathf.Abs(body.linearVelocity.y) > maxSpeed)
-        {
-            body.linearVelocity = new(body.linearVelocity.x, Mathf.Sign(body.linearVelocity.y) * maxSpeed);
-        }
-    }
+    //private void LimitSpeed()
+    //{
+    //    if (Mathf.Abs(body.linearVelocity.y) > maxSpeed)
+    //    {
+    //        body.linearVelocity = new(body.linearVelocity.x, Mathf.Sign(body.linearVelocity.y) * maxSpeed);
+    //    }
+    //}
 
 
     private void HandleInput()
     {
-        bool previousInput = jumpInput;
-        jumpInput = InputActivation(MicrophoneInputProcessor.Instance.lastRoundInputState);
+        //bool previousInput = jumpInput;
+        //jumpInput = InputActivation(MicrophoneInputProcessor.Instance.lastRoundInputState);
 
-        bool jumpPressed = previousInput == false && jumpInput == true;
-        bool jumpReleased = previousInput == true && jumpInput == false;
+        //bool jumpPressed = previousInput == false && jumpInput == true;
+        //bool jumpReleased = previousInput == true && jumpInput == false;
 
-        if (jumpInput) TryJump();
+        /*if (jumpInput)*/ TryJump();
     }
 
     static bool InputActivation(InputRange lastInput) => lastInput.level >= 1;
