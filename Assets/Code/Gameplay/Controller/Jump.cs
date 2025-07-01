@@ -31,16 +31,22 @@ public class Jump : MonoBehaviour
 
     private void Update()
     {
+        Vector2 position = transform.position;
+        position.y = Mathf.Clamp(position.y, -4.4f, 2.65f);
+        transform.position = position;
+    }
+    private void FixedUpdate()
+    {
         //if (timer > 0) timer -= Time.deltaTime;
 
         HandleInput();
     }
 
-    private void FixedUpdate()
-    {
-        //BetterJump();
-        //LimitSpeed();
-    }
+    //private void FixedUpdate()
+    //{
+    //    //BetterJump();
+    //    //LimitSpeed();
+    //}
 
     private void TryJump()
     {
@@ -66,16 +72,16 @@ public class Jump : MonoBehaviour
         smoothedLoudness = Mathf.Lerp(smoothedLoudness, MicrophoneInput.Instance.loudness, lowPassFilterStrength);
 
         print(MicrophoneInput.Instance.loudness); // Sonoridad original
-        print("Smoothed Loudness: " + smoothedLoudness); // Sonoridad suavizada
+        //print("Smoothed Loudness: " + smoothedLoudness); // Sonoridad suavizada
 
         // Calcula la posición objetivo usando la sonoridad suavizada
         Vector2 target = new Vector2(body.position.x, smoothedLoudness - 4.5f);
-        print(target);
+        //print(target);
 
         // Interpola la posición del cuerpo hacia el objetivo de forma suavizada
         // El uso de Time.deltaTime * positionLerpSpeed asegura que la velocidad de interpolación
         // sea independiente del framerate.
-        body.position = Vector2.Lerp(body.position, target, Time.deltaTime * positionLerpSpeed);
+        body.position = Vector2.Lerp(body.position, target, Time.fixedDeltaTime * positionLerpSpeed);
         //timer = cooldown;
     }
 

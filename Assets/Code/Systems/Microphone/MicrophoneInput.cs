@@ -143,7 +143,7 @@ public class MicrophoneInput : Singleton<MicrophoneInput>
         }
 
         loudnessPreAmp = GetLoudness(Microphone.GetPosition(device.name), clip);
-        loudness = Mathf.Clamp(loudnessPreAmp * sensibility, 0, 100);
+        loudness = /*Mathf.Clamp(*/loudnessPreAmp * sensibility * 100/*, 0, 100)*/;
         //Debug.Log(AudioSettings.outputSampleRate);
         //Debug.Log(loudness);
     }
