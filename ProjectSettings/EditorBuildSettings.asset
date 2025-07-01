@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Disclaimer.unity
     guid: e5485380477a79c47bc30055767f2e31
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 08dbd92cda521b145b9c05b02a4c56db
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: be28d56488331224ea5195c8cba2d22d
   - enabled: 1
