@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class TutorialStar : MonoBehaviour
@@ -14,7 +12,7 @@ public class TutorialStar : MonoBehaviour
     public float TimeOnStar => _timeOnStar;
     private float _currentTimeOnStar;
     public float CurrentTimeOnStar => _currentTimeOnStar;
-    [SerializeField] private string _gameSceneName = "Juego";
+    [SerializeField] private TransitionToGame _transitionToGame;
 
     private void Start()
     {
@@ -29,7 +27,7 @@ public class TutorialStar : MonoBehaviour
 
     private void GoToGame()
     {
-        SceneManager.LoadScene(_gameSceneName);
+        _transitionToGame.StartGame();
     }
 
     private void SetHeight()
