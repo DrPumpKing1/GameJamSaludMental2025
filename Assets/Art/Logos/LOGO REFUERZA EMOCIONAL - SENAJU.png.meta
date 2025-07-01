@@ -1,0 +1,1833 @@
+fileFormatVersion: 2
+guid: afdb5c3da4e3a7c4fab32108fd91701d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6297945454289987470
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_0
+  - first:
+      213: -2505574128051337653
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_1
+  - first:
+      213: -8457917930876377959
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_2
+  - first:
+      213: 1196101997570237290
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_3
+  - first:
+      213: -5460012854594496177
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_4
+  - first:
+      213: 3928263504374575169
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_5
+  - first:
+      213: -6942083785594422179
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_6
+  - first:
+      213: 4171513621198458804
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_7
+  - first:
+      213: -2272023816048739579
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_8
+  - first:
+      213: -8801647865448564595
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_9
+  - first:
+      213: 18235412212180196
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_10
+  - first:
+      213: -5649092148901476253
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_11
+  - first:
+      213: -7384068680678926457
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_12
+  - first:
+      213: 6176702123675580509
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_13
+  - first:
+      213: 4256610035520517504
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_14
+  - first:
+      213: 171817586225207315
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_15
+  - first:
+      213: -5425573117945575226
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_16
+  - first:
+      213: -3083912506078211288
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_17
+  - first:
+      213: -3423119816408125302
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_18
+  - first:
+      213: -8020311555165443628
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_19
+  - first:
+      213: 1727480651072344718
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_20
+  - first:
+      213: -8137892778748864864
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_21
+  - first:
+      213: 5778255013005285030
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_22
+  - first:
+      213: 285018807041324352
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_23
+  - first:
+      213: -2736886741711705396
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_24
+  - first:
+      213: -4612142164394821126
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_25
+  - first:
+      213: -659808127515695877
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_26
+  - first:
+      213: -525076935906641331
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_27
+  - first:
+      213: -3800133271485047786
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_28
+  - first:
+      213: 3516118608600968270
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_29
+  - first:
+      213: 1569024551304103087
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_30
+  - first:
+      213: -8172414903661626517
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_31
+  - first:
+      213: -2711844927909847581
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_32
+  - first:
+      213: 703434793155258520
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_33
+  - first:
+      213: -4560592339505569799
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_34
+  - first:
+      213: 2944781603439179474
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_35
+  - first:
+      213: 799984599131047921
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_36
+  - first:
+      213: -8200088880108715017
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_37
+  - first:
+      213: 2484476837695913609
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_38
+  - first:
+      213: 6996219603341050929
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_39
+  - first:
+      213: -8508707675768774771
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_40
+  - first:
+      213: 6510978765401105317
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_41
+  - first:
+      213: 3217519794071534654
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_42
+  - first:
+      213: 8684176823633553561
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_43
+  - first:
+      213: -49477649630692014
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_44
+  - first:
+      213: 2835705566885158718
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_45
+  - first:
+      213: 2525083033886980319
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_46
+  - first:
+      213: -3394302303255811890
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_47
+  - first:
+      213: -6607131977706370697
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_48
+  - first:
+      213: 404436089057954079
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_49
+  - first:
+      213: -515953323551598398
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_50
+  - first:
+      213: 3511338035362217287
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_51
+  - first:
+      213: 6071432511542735747
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_52
+  - first:
+      213: -184289801314055091
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_53
+  - first:
+      213: 193494147780374237
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_54
+  - first:
+      213: -4549141202440955276
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_55
+  - first:
+      213: 6462562160585531942
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_56
+  - first:
+      213: -3093301149339699736
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_57
+  - first:
+      213: -8358132153874912627
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_58
+  - first:
+      213: -318235252800910659
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_59
+  - first:
+      213: 1243759708374599970
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_60
+  - first:
+      213: -1581903812253767141
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_61
+  - first:
+      213: -8817662649452045156
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_62
+  - first:
+      213: 828147292876305263
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_63
+  - first:
+      213: -705977828231170681
+    second: LOGO REFUERZA EMOCIONAL - SENAJU_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_0
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 574
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87adb1d50cc66750800000000000000
+      internalID: 6297945454289987470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 574
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46471b0b996a3dd0800000000000000
+      internalID: -2505574128051337653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 574
+        width: 22
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994e4be24707f9a80800000000000000
+      internalID: -8457917930876377959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 573
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a632f48fd68699010800000000000000
+      internalID: 1196101997570237290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 573
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4914d4bc332a34b0800000000000000
+      internalID: -5460012854594496177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 574
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140b06a28def38630800000000000000
+      internalID: 3928263504374575169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 574
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c35a6e393c8af90800000000000000
+      internalID: -6942083785594422179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 573
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfcc3f698134e930800000000000000
+      internalID: 4171513621198458804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 447
+        width: 72
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50bff2380662870e0800000000000000
+      internalID: -2272023816048739579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 446
+        width: 144
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88fcd546e34ad580800000000000000
+      internalID: -8801647865448564595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_10
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 446
+        width: 92
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e46d33c209c04000800000000000000
+      internalID: 18235412212180196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 449
+        width: 79
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3688749ee946a91b0800000000000000
+      internalID: -5649092148901476253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_12
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 527
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7879b0b48a4868990800000000000000
+      internalID: -7384068680678926457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_13
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 446
+        width: 92
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58751d1bdd08b550800000000000000
+      internalID: 6176702123675580509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_14
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 447
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085309a5644821b30800000000000000
+      internalID: 4256610035520517504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_15
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 446
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3185e113f2b626200800000000000000
+      internalID: 171817586225207315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_16
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 447
+        width: 39
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c802f1cefd74b4b0800000000000000
+      internalID: -5425573117945575226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_17
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 447
+        width: 42
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823d2dc3aedb335d0800000000000000
+      internalID: -3083912506078211288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_18
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 137
+        width: 112
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80b467d9a2ae70d0800000000000000
+      internalID: -3423119816408125302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_19
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 292
+        width: 16
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9276e422122b090800000000000000
+      internalID: -8020311555165443628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_20
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 317
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e821783ef7e39f710800000000000000
+      internalID: 1727480651072344718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_21
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 263
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6157652a5601f80800000000000000
+      internalID: -8137892778748864864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_22
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 214
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6dccfd15c703050800000000000000
+      internalID: 5778255013005285030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_23
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 184
+        width: 83
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045f00c481794f300800000000000000
+      internalID: 285018807041324352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_24
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 186
+        width: 93
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca2cc15200a40ad0800000000000000
+      internalID: -2736886741711705396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_25
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 186
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af935ad33216effb0800000000000000
+      internalID: -4612142164394821126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_26
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 186
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4e28bf004e7d6f0800000000000000
+      internalID: -659808127515695877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_27
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 186
+        width: 70
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ab88b0f4d86b8f0800000000000000
+      internalID: -525076935906641331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_28
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 186
+        width: 107
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c9dfd6ce6334bc0800000000000000
+      internalID: -3800133271485047786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_29
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 130
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c2dcdce33cbc030800000000000000
+      internalID: 3516118608600968270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 110
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa40950348b46c510800000000000000
+      internalID: 1569024551304103087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_31
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 134
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bf326c1ffb59e80800000000000000
+      internalID: -8172414903661626517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_32
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 122
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed1df1f7679d5ad0800000000000000
+      internalID: -2711844927909847581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_33
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 122
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8986ba8a73a13c900800000000000000
+      internalID: 703434793155258520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_34
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 147
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff17662e6585b0c0800000000000000
+      internalID: -4560592339505569799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_35
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 123
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6f8162447fdd820800000000000000
+      internalID: 2944781603439179474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_36
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 148
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f74df021cd1a1b00800000000000000
+      internalID: 799984599131047921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_37
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 123
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f34d760c9e633e80800000000000000
+      internalID: -8200088880108715017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_38
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 122
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98efc834582aa7220800000000000000
+      internalID: 2484476837695913609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_39
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 123
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13484c369a0971160800000000000000
+      internalID: 6996219603341050929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_40
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 122
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f9920337ffae980800000000000000
+      internalID: -8508707675768774771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_41
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 122
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a328d3c0b4ab5a50800000000000000
+      internalID: 6510978765401105317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_42
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 122
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cfb6f943de6ac20800000000000000
+      internalID: 3217519794071534654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_43
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 89
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998ab537fc4648870800000000000000
+      internalID: 8684176823633553561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_44
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 122
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25df07df658305ff0800000000000000
+      internalID: -49477649630692014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_45
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 122
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f99c950337a5720800000000000000
+      internalID: 2835705566885158718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_46
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 123
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8f23f04a5ea0320800000000000000
+      internalID: 2525083033886980319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_47
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 122
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8a52af90405e0d0800000000000000
+      internalID: -3394302303255811890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_48
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 122
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77900bce870ce44a0800000000000000
+      internalID: -6607131977706370697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_49
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 123
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19c5aeea78dc9500800000000000000
+      internalID: 404436089057954079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_50
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 123
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c856059f27f6d8f0800000000000000
+      internalID: -515953323551598398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_51
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 122
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d351cd657cab030800000000000000
+      internalID: 3511338035362217287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_52
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 122
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383334093bf024450800000000000000
+      internalID: 6071432511542735747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_53
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 122
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4cc2f0f665417df0800000000000000
+      internalID: -184289801314055091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_54
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 123
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddee098f6ed6fa200800000000000000
+      internalID: 193494147780374237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_55
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 122
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ad963cd243ed0c0800000000000000
+      internalID: -4549141202440955276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_56
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 123
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622e4908b02afa950800000000000000
+      internalID: 6462562160585531942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_57
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 122
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5bc426ef26215d0800000000000000
+      internalID: -3093301149339699736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_58
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 122
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ae38ed613f10c80800000000000000
+      internalID: -8358132153874912627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_59
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 122
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba8bc149b6659bf0800000000000000
+      internalID: -318235252800910659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_60
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 122
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2298c937dd8b24110800000000000000
+      internalID: 1243759708374599970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_61
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 123
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a27c13dd2fb0ae0800000000000000
+      internalID: -1581903812253767141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_62
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 122
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c5e2ec98e51a580800000000000000
+      internalID: -8817662649452045156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_63
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 123
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63f79d339b2e7b00800000000000000
+      internalID: 828147292876305263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO REFUERZA EMOCIONAL - SENAJU_64
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 122
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785baf8d7ecd336f0800000000000000
+      internalID: -705977828231170681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LOGO REFUERZA EMOCIONAL - SENAJU_0: 6297945454289987470
+      LOGO REFUERZA EMOCIONAL - SENAJU_1: -2505574128051337653
+      LOGO REFUERZA EMOCIONAL - SENAJU_10: 18235412212180196
+      LOGO REFUERZA EMOCIONAL - SENAJU_11: -5649092148901476253
+      LOGO REFUERZA EMOCIONAL - SENAJU_12: -7384068680678926457
+      LOGO REFUERZA EMOCIONAL - SENAJU_13: 6176702123675580509
+      LOGO REFUERZA EMOCIONAL - SENAJU_14: 4256610035520517504
+      LOGO REFUERZA EMOCIONAL - SENAJU_15: 171817586225207315
+      LOGO REFUERZA EMOCIONAL - SENAJU_16: -5425573117945575226
+      LOGO REFUERZA EMOCIONAL - SENAJU_17: -3083912506078211288
+      LOGO REFUERZA EMOCIONAL - SENAJU_18: -3423119816408125302
+      LOGO REFUERZA EMOCIONAL - SENAJU_19: -8020311555165443628
+      LOGO REFUERZA EMOCIONAL - SENAJU_2: -8457917930876377959
+      LOGO REFUERZA EMOCIONAL - SENAJU_20: 1727480651072344718
+      LOGO REFUERZA EMOCIONAL - SENAJU_21: -8137892778748864864
+      LOGO REFUERZA EMOCIONAL - SENAJU_22: 5778255013005285030
+      LOGO REFUERZA EMOCIONAL - SENAJU_23: 285018807041324352
+      LOGO REFUERZA EMOCIONAL - SENAJU_24: -2736886741711705396
+      LOGO REFUERZA EMOCIONAL - SENAJU_25: -4612142164394821126
+      LOGO REFUERZA EMOCIONAL - SENAJU_26: -659808127515695877
+      LOGO REFUERZA EMOCIONAL - SENAJU_27: -525076935906641331
+      LOGO REFUERZA EMOCIONAL - SENAJU_28: -3800133271485047786
+      LOGO REFUERZA EMOCIONAL - SENAJU_29: 3516118608600968270
+      LOGO REFUERZA EMOCIONAL - SENAJU_3: 1196101997570237290
+      LOGO REFUERZA EMOCIONAL - SENAJU_30: 1569024551304103087
+      LOGO REFUERZA EMOCIONAL - SENAJU_31: -8172414903661626517
+      LOGO REFUERZA EMOCIONAL - SENAJU_32: -2711844927909847581
+      LOGO REFUERZA EMOCIONAL - SENAJU_33: 703434793155258520
+      LOGO REFUERZA EMOCIONAL - SENAJU_34: -4560592339505569799
+      LOGO REFUERZA EMOCIONAL - SENAJU_35: 2944781603439179474
+      LOGO REFUERZA EMOCIONAL - SENAJU_36: 799984599131047921
+      LOGO REFUERZA EMOCIONAL - SENAJU_37: -8200088880108715017
+      LOGO REFUERZA EMOCIONAL - SENAJU_38: 2484476837695913609
+      LOGO REFUERZA EMOCIONAL - SENAJU_39: 6996219603341050929
+      LOGO REFUERZA EMOCIONAL - SENAJU_4: -5460012854594496177
+      LOGO REFUERZA EMOCIONAL - SENAJU_40: -8508707675768774771
+      LOGO REFUERZA EMOCIONAL - SENAJU_41: 6510978765401105317
+      LOGO REFUERZA EMOCIONAL - SENAJU_42: 3217519794071534654
+      LOGO REFUERZA EMOCIONAL - SENAJU_43: 8684176823633553561
+      LOGO REFUERZA EMOCIONAL - SENAJU_44: -49477649630692014
+      LOGO REFUERZA EMOCIONAL - SENAJU_45: 2835705566885158718
+      LOGO REFUERZA EMOCIONAL - SENAJU_46: 2525083033886980319
+      LOGO REFUERZA EMOCIONAL - SENAJU_47: -3394302303255811890
+      LOGO REFUERZA EMOCIONAL - SENAJU_48: -6607131977706370697
+      LOGO REFUERZA EMOCIONAL - SENAJU_49: 404436089057954079
+      LOGO REFUERZA EMOCIONAL - SENAJU_5: 3928263504374575169
+      LOGO REFUERZA EMOCIONAL - SENAJU_50: -515953323551598398
+      LOGO REFUERZA EMOCIONAL - SENAJU_51: 3511338035362217287
+      LOGO REFUERZA EMOCIONAL - SENAJU_52: 6071432511542735747
+      LOGO REFUERZA EMOCIONAL - SENAJU_53: -184289801314055091
+      LOGO REFUERZA EMOCIONAL - SENAJU_54: 193494147780374237
+      LOGO REFUERZA EMOCIONAL - SENAJU_55: -4549141202440955276
+      LOGO REFUERZA EMOCIONAL - SENAJU_56: 6462562160585531942
+      LOGO REFUERZA EMOCIONAL - SENAJU_57: -3093301149339699736
+      LOGO REFUERZA EMOCIONAL - SENAJU_58: -8358132153874912627
+      LOGO REFUERZA EMOCIONAL - SENAJU_59: -318235252800910659
+      LOGO REFUERZA EMOCIONAL - SENAJU_6: -6942083785594422179
+      LOGO REFUERZA EMOCIONAL - SENAJU_60: 1243759708374599970
+      LOGO REFUERZA EMOCIONAL - SENAJU_61: -1581903812253767141
+      LOGO REFUERZA EMOCIONAL - SENAJU_62: -8817662649452045156
+      LOGO REFUERZA EMOCIONAL - SENAJU_63: 828147292876305263
+      LOGO REFUERZA EMOCIONAL - SENAJU_64: -705977828231170681
+      LOGO REFUERZA EMOCIONAL - SENAJU_7: 4171513621198458804
+      LOGO REFUERZA EMOCIONAL - SENAJU_8: -2272023816048739579
+      LOGO REFUERZA EMOCIONAL - SENAJU_9: -8801647865448564595
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
