@@ -20,10 +20,10 @@ public class ToggleMicro : MonoBehaviour
     public void OnToggleChanged(bool isOn)
     {
         simpleMovement.enabled = !isOn;
-        rb.bodyType = isOn ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;
-        /*rb.gravityScale = isOn ? 0.01f : rbN;
+        /*rb.bodyType = isOn ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;*/
+        rb.gravityScale = isOn ? 0.01f : rbN;
         rb.linearDamping = isOn ? 3f : 0f;
-        rb.interpolation = RigidbodyInterpolation2D.Interpolate;*/
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         foreach (var movement in complexMovements)
         {
