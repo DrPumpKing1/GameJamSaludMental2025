@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Threading.Tasks;
 
 public class FadeOutOnStart : MonoBehaviour
 {
@@ -11,12 +12,7 @@ public class FadeOutOnStart : MonoBehaviour
     [SerializeField] private float fadeOutDuration = 1.5f; // Duración por defecto de 1.5 segundos
     [SerializeField] private GameObject Options;
 
-    private void Awake()
-    {
-        Options.SetActive(false);
-    }
-
-    private void Start()
+    private async void Start()
     {
         // Asegúrate de que hay una imagen asignada para el fade
         if (fadeImage == null)
@@ -33,6 +29,8 @@ public class FadeOutOnStart : MonoBehaviour
 
         // Inicia la coroutine para el efecto de fade out
         StartCoroutine(DoFadeOut());
+        await Task.Yield();
+        Options.SetActive(false);
     }
 
     private IEnumerator DoFadeOut()
