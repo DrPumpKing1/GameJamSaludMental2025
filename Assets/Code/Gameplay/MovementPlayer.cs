@@ -25,6 +25,10 @@ public class MovementPlayer : MonoBehaviour
         {
             AddForceUp();
         }
+
+        Vector2 position = transform.position;
+        position.y = Mathf.Clamp(position.y, -4.4f, 2.65f);
+        transform.position = position;
     }
 
     //void AddVelocityRight()
