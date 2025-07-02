@@ -9,6 +9,12 @@ public class FadeOutOnStart : MonoBehaviour
 
     [Tooltip("Duración del efecto de Fade Out al iniciar la escena.")]
     [SerializeField] private float fadeOutDuration = 1.5f; // Duración por defecto de 1.5 segundos
+    [SerializeField] private GameObject Options;
+
+    private void Awake()
+    {
+        Options.SetActive(false);
+    }
 
     private void Start()
     {
