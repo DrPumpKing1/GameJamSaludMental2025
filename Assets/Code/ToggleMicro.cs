@@ -8,6 +8,8 @@ public class ToggleMicro : MonoBehaviour
     [SerializeField] private MonoBehaviour simpleMovement;
 
     [SerializeField] private MonoBehaviour[] complexMovements;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private float rbN;
 
     private void Start()
     {
@@ -18,6 +20,10 @@ public class ToggleMicro : MonoBehaviour
     public void OnToggleChanged(bool isOn)
     {
         simpleMovement.enabled = !isOn;
+
+        rb.gravityScale = isOn ? 0.1f : rbN;
+        rb.linearDamping = isOn ? 3f : 0f;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         foreach (var movement in complexMovements)
         {

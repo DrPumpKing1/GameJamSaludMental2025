@@ -3347,6 +3347,8 @@ MonoBehaviour:
   - {fileID: 1857769771}
   - {fileID: 1857769770}
   - {fileID: 1857769769}
+  rb: {fileID: 1857769779}
+  rbN: 1
 --- !u!1 &1041600154
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,6 +4972,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe376c07e7ccc7a4e95b7290c32e8af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1857769779 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6791834913843100018, guid: 20f9b3dffc5d34a43af76a123ae87c86, type: 3}
+  m_PrefabInstance: {fileID: 1532764355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1875422415
 GameObject:
   m_ObjectHideFlags: 0
