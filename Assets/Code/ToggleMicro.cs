@@ -13,17 +13,26 @@ public class ToggleMicro : MonoBehaviour
 
     private void Start()
     {
-        OnToggleChanged(movementToggle.isOn);
-        movementToggle.onValueChanged.AddListener(OnToggleChanged);
+        bool useMic = PlayerPrefs.GetInt("UseMicrophone", 0) == 1;
+        if (movementToggle != null)
+        {
+            movementToggle.isOn = useMic;
+            movementToggle.onValueChanged.AddListener(OnToggleChanged);
+        }
+        OnToggleChanged(useMic);
     }
 
     public void OnToggleChanged(bool isOn)
     {
-        simpleMovement.enabled = !isOn;
-        /*rb.bodyType = isOn ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;*/
-        rb.gravityScale = isOn ? 0.01f : rbN;
-        rb.linearDamping = isOn ? 3f : 0f;
-        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        PlayerPrefs.SetInt("UseMicrophone", isOn ? 1 : 0);
+        PlayerPrefs.Save();
+        if (simpleMovement != null) simpleMovement.enabled = !isOn;
+        if (rb != null)
+        {
+            rb.gravityScale = isOn ? 0.01f : rbN;
+            rb.linearDamping = isOn ? 3f : 0f;
+            rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        }
 
         foreach (var movement in complexMovements)
         {
